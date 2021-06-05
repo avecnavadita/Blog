@@ -11,7 +11,7 @@ title: Home
 
 <div class="main_aside">
     <h2>Latest Posts</h2>
-    <ul role="list">
+    <ul role="list" class="latest-post">
         {% for post in site.posts %}
             <li><a href="/Blog/_site{{ post.url }}">{{ post.title | capitalize }}</a></li>
         {% endfor %}
@@ -23,9 +23,9 @@ title: Home
     <div class="tag-child">
         <ul>
             {% for post in site.posts %}
-            {% assign i = forloop.index0 %}
+            {% assign i = forloop.index %}
               <li>
-                <a href="{{ post.url }}"> {{ i }}. {{ post.tags[i] }}</a>
+                <a href="{{ post.url }}"> {{ post.tags[0] }}</a>
               </li>
             {% endfor %}
           </ul>

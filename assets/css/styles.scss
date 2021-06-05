@@ -3,12 +3,16 @@
 @import "main";
 
 // global 
-
 body{
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     font-size: 20px;
     --gray-light: #a496c430;
+}
+
+ul.latest-post li::before {
+    content: "✔ ";
+    color: #663399;
 }
 
 a {
@@ -36,13 +40,18 @@ h1 {
     text-align: center;
 }
 
+.blog-wrapper h1{
+    padding: 90px 0;
+}
+
 h2 {
     font-size: 25px;
+    text-transform: uppercase;
 }
 
 h3 {
     color: black;
-    text-align: center;
+    font-size: 1.2rem;
 }
 
 li h2 {
@@ -50,7 +59,6 @@ li h2 {
 }
 
 // container
-
 #container{
     font-size: 20px;
     margin: 0 auto;
@@ -60,7 +68,6 @@ li h2 {
 }
 
 // header 
-
 header.top-header {
     display: grid;
     grid-template-columns: 200px 1fr;
@@ -81,37 +88,6 @@ header.top-header {
 }
 
 // main 
-
-// .main {
-//     min-height: 60vh;
-//     padding: 20px;
-//     padding-bottom: 0;
-//     display: grid;
-//     grid-template-columns: 70% 1fr;
-//     grid-gap: 30px;
-// }
-
-// .main ul {
-//     display: grid;
-//     grid-template-columns: 1fr 1fr;
-//     list-style-type: none;
-//     grid-gap: 20px;
-// }
-
-// .main_aside ul {
-//     display: block;
-//     list-style-type: decimal-leading-zero;
-// }
-
-// ::marker {
-//     color: #673ab7;
-// }
-
-// .main_aside li {
-//     padding: 10px 0;
-//     font-size: 1rem;
-// }
-
 img {
     width: 200px;
 }
@@ -121,23 +97,18 @@ img {
 }
 
 .content_wrapper {
-    margin: 40px 0;
     display: grid;
-    grid-template-columns: 600px 1fr;
-    grid-template-rows: 1fr auto;
+    grid-template-columns: 700px 1fr;
+    grid-template-rows: auto;
     grid-gap: 40px;
+    padding: 20px;
 }
 
 .main_wrapper {
     grid-row: 1/3;
 }
 
-.main_aside a {
-    line-height: 40px;
-}
-
 // navigation 
-
 nav {
     background: #9479e354;
     padding: 1px;
@@ -164,14 +135,12 @@ nav a:hover{
 }
 
 // footer 
-
 footer {
     background: var(--gray-light);
     padding: 10px;
 }
 
 // tags
-
 .tag-child {
     display: flex;
 }
@@ -185,17 +154,42 @@ footer {
 }
 
 // blog
-
 .blog-wrapper {
     width: 1024px;
 }
 
 // images
-
 .image-wrapper {
     padding: 20px;
 }
 
 .img-text {
     margin-top: 10px;
+    text-align: center;
+}
+
+// movie
+.movie-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap:20px;
+}
+
+.image-wrapper {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+// staff
+.content_wrapper h1 {
+    grid-column: 1/3;
+    line-height: 140px;
+}
+
+// author
+.author {
+    place-self: center;
+    line-height: 40px;
 }

@@ -4,11 +4,13 @@ title: Blog
 ---
 <ul>
   {% for post in site.posts %}
-    <li>
-      <h2><a href="/Blog/_site{{ post.url }}">{{ post.title }}</a></h2>
-      <div class="post_excerpt">
-        {{ post.excerpt }}
-      </div>
-    </li>
+    {% if post.tags[0] != "movie" %}
+      <li>
+        <h2><a href="/Blog/_site{{ post.url }}">{{ post.title }}</a></h2>
+        <div class="post_excerpt">
+          {{ post.excerpt }}
+        </div>
+      </li>
+    {% endif %}
   {% endfor %}
 </ul>
