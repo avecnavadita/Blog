@@ -2,14 +2,13 @@
 layout: default
 title: Blog
 ---
-<h1>Latest Posts</h1>
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint quaerat cum nam minus minima velit perferendis consectetur error rerum exercitationem soluta qui, aut eaque voluptatibus, consequuntur ullam corporis beatae tempora.</p>
-
 <ul>
   {% for post in site.posts %}
     <li>
-      <h2><a href="/jekyll-byMyself/_site{{ post.url }}">{{ post.title }}</a></h2>
-      {{ post.excerpt }}
+      <h2><a href="/Blog/_site{{ post.url }}">{{ post.title }}</a></h2>
+      <div class="post_excerpt">
+        {{ post.excerpt }}
+      </div>
     </li>
   {% endfor %}
 </ul>
