@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<ul class="movie">
+  {% for x in site.posts %}
+    {% if x.page == "movie" %}
+    <li>
+      <a href="{{ x.url }}">{{ x.title }}</a>
+    </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
