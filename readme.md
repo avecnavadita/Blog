@@ -9,6 +9,7 @@ Make sure bundler is installed and enter the following into the shell. It will c
 ```
 bundle init
 ```
+
 ## Add Jekyll
 
 Use Bundler to add Jekyll as a dependency of our new project. This command will add the Jekyll gem to our `Gemfile` created above.
@@ -16,6 +17,31 @@ Use Bundler to add Jekyll as a dependency of our new project. This command will 
 ```
 bundle add jekyll
 ```
+
+## [Buldle Install](https://bundler.io/v2.2/man/bundle-install.1.html)
+
+```
+bundle install
+```
+
+If this is the first time you run `bundle install` (and a `Gemfile.lock` does not exist), Bundler will fetch all remote sources, resolve dependencies and install all needed gems.
+
+However, if a `Gemfile.lock` does exist, and you have not updated your Gemfile, Bundler will fetch all remote sources, but use the dependencies specified in the Gemfile.lock instead of resolving dependencies.
+
+
+## Gemfile
+
+Gemfile - A format for describing gem dependencies for Ruby programs.
+
+Place the Gemfile in the root of the directory containing the associated code.
+
+At the top of the Gemfile, add a line for the Rubygems source that contains the gems listed in the Gemfile.
+
+```source "https://rubygems.org"```
+
+If your application requires a specific Ruby version or engine, specify your requirements using the ruby method.
+
+```ruby "1.9.3"```
 
 ## Create A Jekyll Scaffold
 
