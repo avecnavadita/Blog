@@ -23,7 +23,7 @@ h3 { color: black; font-size: 1.2rem; }
 
 li h2 { text-align: left; }
 
-#container { font-size: 20px; margin: 0 auto; display: grid; grid-template-rows: auto 1fr auto; width: 1024px; }
+#container { font-size: 20px; margin: 0 auto; display: grid; grid-template-rows: auto 1fr auto; max-width: 1200px; }
 
 header.top-header { display: grid; grid-template-columns: 200px 1fr; place-items: self-end; background: var(--gray-light); }
 
