@@ -2,15 +2,13 @@
 layout: default
 title: Blog
 ---
+<h1>Historical Person</h1>
+{{ page.url }}
 <ul>
   {% for post in site.posts %}
-    {% if post.tags[0] != "movie" %}
-      <li>
-        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-        <div class="post_excerpt">
-          {{ post.excerpt }}
-        </div>
-      </li>
-    {% endif %}
+    <li>
+      <h2><a href="Buddha-blog/_site/{{ post.url }}">Gautama Buddha</a></h2>
+      {{ post.excerpt }}
+    </li>
   {% endfor %}
 </ul>

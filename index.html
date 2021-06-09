@@ -1,33 +1,77 @@
 ---
-layout: default
-title: Home
+
 ---
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
 
-<div class="main_wrapper">
-<h2>{{ "Hello World!" | downcase }}</h2>
-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto optio quam cupiditate praesentium ea rem, dignissimos nulla nesciunt placeat ut deleniti vel repellendus aut doloribus fugiat ipsa beatae veritatis ad?</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quae tempore in tempora doloremque vero illo a asperiores veritatis quibusdam dignissimos laboriosam optio iure corporis, ratione deserunt hic debitis. Earum.</p>
-</div>
+      .item1 { grid-area: header; }
+      .item2 { grid-area: menu; }
+      .item3 { grid-area: main; }
+      .item4 { grid-area: right; }
+      .item5 { grid-area: footer; }
 
-<div class="main_aside">
-    <h2>Latest Posts</h2>
-    <ul role="list" class="latest-post">
-        {% for post in site.posts %}
-            <li><a href="{{ post.url }}">{{ post.title | capitalize }}</a></li>
-        {% endfor %}
-    </ul>
-</div>
+      .grid-container {
+          display: grid;
+          grid-template-areas:
+              'header header header header header header'
+              'menu main main main right right'
+              'menu footer footer footer footer footer';
+          grid-gap: 10px;
+          background-color: #2196F3;
+          padding: 10px;
+      }
 
-<div class="tags">
-    <h2>Tags</h2>
-    <div class="tag-child">
-        <ul>
-            {% for post in site.posts %}
-            {% assign i = forloop.index %}
-              <li>
-                <a href="{{ post.url }}"> {{ post.tags[0] }}</a>
-              </li>
-            {% endfor %}
-          </ul>
-    </div>
-</div>
+      body {
+          font-family: 'Rubik', sans-serif;
+          letter-spacing: 1px;
+          font-size: 22px;
+          text-align: center;
+      }
+
+      .grid-container > div {
+          background-color: rgba(255, 255, 255, 0.8);
+          text-align: center;
+          padding: 20px 0;
+          font-size: 30px;
+      }
+        p {
+            margin: 0px 50px;
+        }
+
+      .link {
+          margin-top: 20px;
+          font-size: 22px;
+      }
+
+      a:hover {
+          color: red;
+      }
+
+      h1:hover{
+          color: #2196F3;
+      }
+
+      li {
+          font-size: 20px;
+      }
+
+      ul {
+          text-underline-position: under;
+          list-style-type: none;
+          padding: 0;
+      }
+
+      a {
+          margin-right: 20px;
+      }
+
+    </style>
+    <title>Home</title>
+  </head>
+  <body>
+    <h1>{{ "Hello World!" | downcase }}</h1>
+  </body>
+</html>
