@@ -1,0 +1,66 @@
+- category: animation
+  title: Moana
+  image: moana.jpg
+  year: 2021
+  link: 'https://www.rottentomatoes.com/m/moana_2016'
+
+- category: animation
+  title: Brave
+  image: brave.jpg
+  year: 2021
+  link: 'https://www.rottentomatoes.com/m/brave_2012'
+
+- category: animation
+  title: Spider-Man
+  image: spiderman-homecoming.jpg
+  year: 2021
+  link: 'https://www.rottentomatoes.com/m/spider_man_far_from_home'
+
+- category: animation
+  title: Monsters University
+  image: monsters3.jpg
+  year: 2021
+  link: 'https://www.rottentomatoes.com/m/monsters_university'
+
+- category: animation
+  title: Raya-and-theLast-Dragon
+  image: raya.jpg  
+  year: 2021
+  link: 'https:/www.rottentomatoes.com/m/raya_and_the_last_dragon'
+
+- category: animation
+  title: Cars
+  image: cars.jpg
+  year: 2021
+  link: 'https://www.rottentomatoes.com/m/cars'
+
+- category: animation
+  title: TheGood-Dinosaur
+  image: dinosaur.jpg
+  year: 2020
+  link: 'htps://www.rottentomatoes.com/m/the_good_dinosaur'
+
+- category: animation
+  title: Tangled
+  image: tangled.jpg
+  year: 2021
+  link: 'https://www.rottentomatoes.com/m/tangled'
+
+- category: animation
+  title: Frozen
+  image: frozen.jpg
+  year: 2021
+  link: 'https://www.rottentomatoes.com/m/frozen_2013'
+
+- category: animation
+  title: Zootopia
+  image: zootopia.jpg
+  year: 2021
+  link: 'https://www.rottentomatoes.com/m/zootopia'
+
+- category: animation
+  title: Hotel-Transylvania
+  image: hotel-transylvania3.jpg
+  year: 2021
+  link: 'https://www.rottentomatoes.com/m/hotel_transylvania_3_summer_vacation'
+
