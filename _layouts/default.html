@@ -3,22 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Limelight&family=Montserrat:ital@1&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
   </head>
   <body>
-    <div id="container">
-     <div class="header">
-        {% include header.html %}
-        {% include navigation.html %}
-     </div> 
-     <div class="content_wrapper">
-      {{ content }} 
-     </div>
-        <div class="footer">
-          {% include footer.html %}
-        </div>
-    </div>
+    {% include navigation.html %}
+    {{ content }}
   </body>
 </html>

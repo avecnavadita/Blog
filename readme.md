@@ -1,25 +1,10 @@
 # [Using Jekyll with Bundler](https://jekyllrb.com/tutorials/using-jekyll-with-bundler/)
 
-## Installation
-
-- Install [Ruby](https://www.ruby-lang.org/en/)
-- Install [Bundler](https://bundler.io/)
-
-```
-gem install jekyll bundler
-```
-
-## Create Gemfile
-
-Create a new `Gemfile` for project's dependencies (libraries).
-
-```
-gem install jekyll bundler
-```
+Install [Ruby](https://www.ruby-lang.org/en/) and [Bundler](https://bundler.io/)
 
 ## Initialize Bundler
 
-Create a new `Gemfile` to list your project’s dependencies:
+Make sure bundler is installed and enter the following into the shell. It will create a special file `.Gemfile` where all your project dependencies will be stored.
 
 ```
 bundle init
@@ -33,25 +18,7 @@ Use Bundler to add Jekyll as a dependency of our new project. This command will 
 bundle add jekyll
 ```
 
-Or edit the `Gemfile` and enter `gem "jekyll"`
-
-## Run Bundle
-
-Run `bundle` to  install jekyll for your project
-
-You can now prefix all jekyll commands listed in this tutorial with `bundle exec` to make sure you use the jekyll version defined in your Gemfile.
-
-## Serve the Site
-
-Our new website is ready! We can serve the website with 
-
-```
-bundle exec jekyll serve
-``` 
-
-and visit it at `http://127.0.0.1:4000`
-
-## [Builder Installation](https://bundler.io/v2.2/man/bundle-install.1.html)
+## [Buldle Install](https://bundler.io/v2.2/man/bundle-install.1.html)
 
 ```
 bundle install
@@ -78,14 +45,25 @@ If your application requires a specific Ruby version or engine, specify your req
 
 ## Create A Jekyll Scaffold
 
+```
+
 Scaffold new Jekyll site and install the dependencies.
 
-```
 bundle exec jekyll new --force --skip-bundle .
 bundle install
 ```
 
 Use the `--force` parameter if the folder already has some files in it
+
+## Serve the Site
+
+Our new website is ready! We can serve the website with 
+
+```
+bundle exec jekyll serve
+``` 
+
+and visit it at `http://127.0.0.1:4000`
 
 ## Bundler
 
