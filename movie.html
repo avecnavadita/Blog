@@ -19,7 +19,9 @@ layout: default
         <nav class="movie-nav" role="navigation">
             <ul>
                 {% for category in uniq_categories  %}
-                    <li>{{ category | upcase }}</li>
+                    <li>
+                        <a href="#">{{ category | upcase }}</a>
+                    </li>
                 {% endfor %}
             </ul>
         </nav>
