@@ -1,0 +1,6 @@
+- name: animation
+  url: movies/2021/05/31/animated-movies.html
+- name: hollybood
+  url: movies/2021/05/31/english-movies.html
+- name: bollywood
+  url: movies/2021/05/31/hindi-movies.html
