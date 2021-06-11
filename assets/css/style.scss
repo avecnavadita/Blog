@@ -223,7 +223,7 @@ nav.movie-nav a {
     line-height: 40px;
 }
 
-// tupitube
+// animation
 .algorithm-header {
     background: #9e9e9e5c;
     box-shadow: 4px 4px 7px #9e9e9e;
@@ -251,7 +251,7 @@ span {
 }
 
 // movie
-.movie_wrapper main {
+.movie_wrapper .wrapper {
     display: grid;
     grid-template-columns: repeat(4,auto);
 }
@@ -278,4 +278,10 @@ span {
 // blog
 .blog-ul-wrapper li {
     margin-bottom: 40px;
+}
+
+//movies
+.movie_wrapper_x .wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }

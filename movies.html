@@ -1,14 +1,153 @@
 ---
-layout: movies
+layout: default
 ---
-<div class="content_wrapper">
-<ul class="movie">
-  {% for x in site.posts %}
-    {% if x.page == "movie" %}
-    <li>
-      <a href="{{ x.url }}">{{ x.title }}</a>
-    </li>
-    {% endif %}
-  {% endfor %}
-</ul>
+
+<div class="movie_wrapper_x">
+    
+    <header>
+
+        <!-- {% capture categories %}
+
+            {% for movie in site.data.movies  %}
+                {{movie.category}}
+            {% endfor %}
+
+        {% endcapture %}
+
+        {% assign uniq_categories = categories | split: ' ' | uniq %}
+
+        <nav class="movie-nav" role="navigation">
+            <ul>
+                {% for category in uniq_categories  %}
+                    <li>
+                        <a href="{{ p }}">{{ category | upcase }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </nav> -->
+
+        <nav class="movie-nav" role="navigation">
+            <ul>
+                {% for category in site.data.movie-nav %}
+                    <li>
+                        <a href="{{ category.url }}">{{ category.name | upcase }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        
+        <div>
+
+            <h2>Animation</h2>
+
+            <div class="wrapper">
+
+                {% for movie in site.data.movies %}
+
+                {% if movie.category == 'animation' %}
+
+                {% assign i = forloop.index %}
+
+                {% if i <= 4 %}
+
+                    <div class="image-wrapper" title="{{ movie.title }}">
+                        <img src="/assets/images/movies/{{ movie.image }}" title="{{ movie.title }}">
+                        <div class="img-temoviet">
+                            <a href="{{ movie.link }}" target="_blank">{{ movie.title }}</a>
+                            <div class="category">{{ movie.category }}</div>
+                            <div class="category">{{ movie.year }}</div>
+                        </div>
+                    </div>
+
+                {% endif %}
+
+                {% endif %}
+                
+                {% endfor %}
+
+            </div>
+
+        </div>
+
+
+
+
+        <div>
+
+            <h2>Hollywood</h2>
+
+            <div class="wrapper">
+
+                {% for movie in site.data.movies %}
+
+                {% if movie.category == 'hollywood' %}
+
+                {% assign i = forloop.index %}
+
+                {% if i <= 15 %}
+
+                    <div class="image-wrapper" title="{{ movie.title }}">
+                        <img src="/assets/images/movies/{{ movie.image }}" title="{{ movie.title }}">
+                        <div class="img-temoviet">
+                            <a href="{{ movie.link }}" target="_blank">{{ movie.title }}</a>
+                            <div class="category">{{ movie.category }}</div>
+                            <div class="category">{{ movie.year }}</div>
+                        </div>
+                    </div>
+
+                {% endif %}
+
+                {% endif %}
+                
+                {% endfor %}
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+        <div>
+
+            <h2>Bollywood</h2>
+
+            <div class="wrapper">
+
+                {% for movie in site.data.movies %}
+
+                {% if movie.category == 'bollywood' %}
+
+                {% assign i = forloop.index %}
+
+                {% if i <= 4 %}
+
+                    <div class="image-wrapper" title="{{ movie.title }}">
+                        <img src="/assets/images/movies/{{ movie.image }}" title="{{ movie.title }}">
+                        <div class="img-temoviet">
+                            <a href="{{ movie.link }}" target="_blank">{{ movie.title }}</a>
+                            <div class="category">{{ movie.category }}</div>
+                        </div>
+                    </div>
+
+                {% endif %}
+
+                {% endif %}
+                
+                {% endfor %}
+
+            </div>
+
+        </div>
+
+
+    </main>
+
 </div>
