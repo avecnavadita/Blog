@@ -2,6 +2,10 @@
 ---
 @import "main";
 
+.display\:.flex\;{
+    display: flex;
+    justify-content: center;
+}
 // global 
 body{
     font-family: 'Montserrat', sans-serif;
@@ -62,14 +66,17 @@ li h2 {
 }
 
 // container
-#container{
+#container {
     font-size: 20px;
     margin: 0 auto;
     display: grid;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: 230px minmax(500px,auto) 50px;
     max-width: 1200px;
+    box-shadow: 0 0px 16px 0px #dcd3f6;
 }
-
+.content_wrapper {
+    padding: 0 10px;
+}
 // header 
 header.top-header {
     display: grid;
@@ -177,23 +184,31 @@ footer {
 }
 
 // movie
-.movie-wrapper {
+.movie_wrapper{
+    margin:10px 0;
+}
+.movie_wrapper main{
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-gap:20px;
-}
-
-.image-wrapper {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .movie-wrapper h3 {
     font-size: 1.6rem;
     text-align: center;
     text-shadow: 2px 2px 2px #6633993d;
+}
+nav.movie-nav {
+    background: rebeccapurple;
+    color: #fff;
+}
+nav.movie-nav a {
+    color: #fff;
+}
+.image-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 // staff

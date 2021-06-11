@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
-    <link href="assets/css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&family=Montserrat:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
   </head>
   <body>
     <div id="container">
@@ -11,14 +13,13 @@
       {% include header.html %}
       <nav>
         {% include navigation.html %}
-      </nav>
-    </header>
-    {{ content }}
-    <main>
-    </main>
-    <footer>
-      {% include footer.html %}
-    </footer>
-  </div>
+     </div> 
+     <div>
+      {{ content }} 
+     </div>
+        <div class="footer">
+          {% include footer.html %}
+        </div>
+    </div>
   </body>
 </html>

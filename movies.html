@@ -1,7 +1,7 @@
 ---
-layout: default
+layout: movies
 ---
-
+<div class="content_wrapper">
 <ul class="movie">
   {% for x in site.posts %}
     {% if x.page == "movie" %}
@@ -11,4 +11,4 @@ layout: default
     {% endif %}
   {% endfor %}
 </ul>
-
+</div>

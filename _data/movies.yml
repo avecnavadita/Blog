@@ -64,3 +64,15 @@
   year: 2021
   link: 'https://www.rottentomatoes.com/m/hotel_transylvania_3_summer_vacation'
 
+- category: hollywood
+  title: Zootopia
+  image: zootopia.jpg
+  year: 2021
+  link: 'https://www.rottentomatoes.com/m/zootopia'
+
+- category: bollywood
+  title: Hotel-Transylvania
+  image: hotel-transylvania3.jpg
+  year: 2021
+  link: 'https://www.rottentomatoes.com/m/hotel_transylvania_3_summer_vacation'
+
