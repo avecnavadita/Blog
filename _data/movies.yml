@@ -1,78 +1,120 @@
-- category: animation
+- category:  animation
   title: Moana
   image: moana.jpg
   year: 2021
   link: 'https://www.rottentomatoes.com/m/moana_2016'
 
-- category: animation
+- category:  animation
   title: Brave
   image: brave.jpg
   year: 2021
   link: 'https://www.rottentomatoes.com/m/brave_2012'
 
-- category: animation
+- category:  animation
   title: Spider-Man
   image: spiderman-homecoming.jpg
   year: 2021
   link: 'https://www.rottentomatoes.com/m/spider_man_far_from_home'
 
-- category: animation
+- category:  animation
   title: Monsters University
   image: monsters3.jpg
   year: 2021
   link: 'https://www.rottentomatoes.com/m/monsters_university'
 
-- category: animation
+- category:  animation
   title: Raya-and-theLast-Dragon
   image: raya.jpg  
   year: 2021
   link: 'https:/www.rottentomatoes.com/m/raya_and_the_last_dragon'
 
-- category: animation
+- category:  animation
   title: Cars
   image: cars.jpg
   year: 2021
   link: 'https://www.rottentomatoes.com/m/cars'
 
-- category: animation
+- category:  animation
   title: TheGood-Dinosaur
   image: dinosaur.jpg
   year: 2020
   link: 'htps://www.rottentomatoes.com/m/the_good_dinosaur'
 
-- category: animation
+- category:  animation
   title: Tangled
   image: tangled.jpg
   year: 2021
   link: 'https://www.rottentomatoes.com/m/tangled'
 
-- category: animation
+- category:  animation
   title: Frozen
   image: frozen.jpg
   year: 2021
   link: 'https://www.rottentomatoes.com/m/frozen_2013'
 
-- category: animation
+- category:  animation
   title: Zootopia
   image: zootopia.jpg
   year: 2021
   link: 'https://www.rottentomatoes.com/m/zootopia'
 
-- category: animation
+- category:  animation
   title: Hotel-Transylvania
   image: hotel-transylvania3.jpg
   year: 2021
   link: 'https://www.rottentomatoes.com/m/hotel_transylvania_3_summer_vacation'
-
-- category: hollywood
-  title: Zootopia
-  image: zootopia.jpg
-  year: 2021
-  link: 'https://www.rottentomatoes.com/m/zootopia'
 
 - category: bollywood
-  title: Hotel-Transylvania
-  image: hotel-transylvania3.jpg
-  year: 2021
-  link: 'https://www.rottentomatoes.com/m/hotel_transylvania_3_summer_vacation'
+  image: hichki.jpg
+  title: Hichki‬
+  year: 2020
+  link: 'https://www.rottentomatoes.com/m/hichki'
 
+- category: bollywood
+  image: golmaal.jpg
+  title: Golmaal Again
+  year: 2020
+  link: 'https://www.rottentomatoes.com/m/golmaal_again'
+
+- category: bollywood
+  image: sultan.jpg
+  title: Sultan‬
+  year: 2020
+  link: 'https://www.rottentomatoes.com/m/sultan_2016'
+
+- category: bollywood
+  image: piku.jpg
+  title: Piku‬
+  year: 2020
+  link: 'https://www.rottentomatoes.com/m/piku'
+
+- category: bollywood
+  image: padmaavat.jpg
+  title: Padmaavat‬
+  year: 2020
+  link: 'https://www.rottentomatoes.com/m/padmaavat'
+
+  
+- category: hollywood
+  image: blue-miracle.jpg
+  title: Blue Miracle
+  link: 'rottentomatoes.com/m/blue_miracle'
+  year: 2020
+
+- category: hollywood
+  image: feel-the-beat.jpg" tit
+  title: eel the Beat‬
+  link: 'https://www.rottentomatoes.com/m/feel_the_beat'
+  year: 2020
+
+- category: hollywood
+  image: a-quiet-place.jpg" tit
+  title: Quiet Place‬
+  link: 'https://www.rottentomatoes.com/m/a_quiet_place_2018" targ'
+  year: 2020
+
+- category: hollywood
+  image: five-feet-apart.png" tit
+  title: ive Feet Apart‬
+  link: 'https://www.rottentomatoes.com/m/five_feet_apart'
+  year: 2020

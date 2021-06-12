@@ -1,15 +1,17 @@
 ---
 layout: default
-title: Staff
+title: Authors
 ---
 <div class="content_wrapper">
-<h1>Staff</h1>
+<h1>{{page.title}}</h1>
 
+<div class="author">
   {% for author in site.authors %}
-    <div class="author">
+    <div>
       <h2><a href="{{ author.url }}">{{ author.name }}</a></h2>
       <h3>{{ author.position }}</h3>
       <p>{{ author.content | markdownify }}</p>
     </div>
   {% endfor %}
+</div>
 </div>
