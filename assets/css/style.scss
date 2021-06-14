@@ -9,7 +9,7 @@
 // global 
 
 :root {
-    --logo-color: #386f2a;
+    --logo-color: #673ab7;
     --gray-light: #a496c430;
     --font-size: 20px;
 }
@@ -38,19 +38,19 @@ ul {
     padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-    color: rebeccapurple;
-}
-
 h1 {
+    color: var(--logo-color);
     letter-spacing: 1px;
-    text-align: center;
 }
 
 .blog-wrapper h1{
     padding: 90px 0;
 }
+
+h2, h3, h4, h5, h6 {
+    margin: 0;
+    color: #000000b5;
+} 
 
 h2 {
     font-size: 25px;
@@ -97,7 +97,7 @@ header.top-header {
     letter-spacing: 8px;
     text-shadow: 2px 2px 0 #dcd3f6, 4px 4px 0 #663399, 6px 6px #9c27b026, 4px 8px #c5b5f0;
     text-transform: uppercase;
-    color: var(--logo-color);
+    color: #673ab7;
     font-family: 'Sigmar One', cursive;
 }
 
@@ -156,7 +156,6 @@ nav a:hover{
 // footer 
 footer {
     background: var(--gray-light);
-    padding: 10px;
 }
 
 // tags
@@ -185,19 +184,6 @@ footer {
 .img-text {
     margin-top: 10px;
     text-align: center;
-}
-
-
-
-// staff
-.content_wrapper h1 {
-    grid-column: 1/3;
-    line-height: 140px;
-}
-.author {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-gap: 50px;
 }
 
 // animation
@@ -293,6 +279,15 @@ span {
     justify-content: center;
     height: 400px;
 }
+
+.thumb__wrapper img {
+    margin: 20px 0;
+}
+
+.img-text {
+    text-align: center;
+}
+
 //movies list by category
 .movie_list__wrapper .cat_thumb__wrapper {
     display: grid;
@@ -307,3 +302,59 @@ span {
     color: #fff;
 }
 
+// author
+.author_wrapper {
+    width: 80%;
+}
+
+.author_wrapper ul {
+    list-style-type: revert;
+    padding: revert;
+}
+
+.author_wrapper li {
+    line-height: 40px;
+}
+
+.author img {
+    width: 220px;
+    // box-shadow: inset 0px 0px 20px 0px #ffffff6e;
+    height: 220px;
+    border-radius: 50%;
+}
+
+.content_wrapper h1 {
+    grid-column: 1/3;
+    line-height: 140px;
+}
+
+.author {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 50px;
+    place-items: center;
+}
+
+.bio img {
+    margin: 30px 0;
+}
+
+.bio {
+    border: 2px dashed #3f51b530;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+    width: 420px;
+}
+
+//blog
+ul.blog-ul {
+    line-height: 50px;
+}
+
+li h2::before {
+    content: "✔ ";
+    letter-spacing: 5px;
+}

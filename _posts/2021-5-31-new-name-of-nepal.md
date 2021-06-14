@@ -2,6 +2,7 @@
 #layout: post
 title : The new name of Nepal
 tags: Nepal
+author: Navadita
 ---
 
 Nepal is officially known around the world as the Federal Democratic Republic of Nepal, the official name adopted by the Constituent Assembly in 2008 after the abolition of a 240-year-old monarchy.

@@ -7,10 +7,11 @@ title: Authors
 
 <div class="author">
   {% for author in site.authors %}
-    <div>
+    <div class="bio">
+      <img src="assets/images/authors/{{ author.dp }}" alt="{{ author.name }}">
       <h2><a href="{{ author.url }}">{{ author.name }}</a></h2>
       <h3>{{ author.position }}</h3>
-      <p>{{ author.content | markdownify }}</p>
+      <p>{{ author.excerpt | markdownify }}</p>
     </div>
   {% endfor %}
 </div>
