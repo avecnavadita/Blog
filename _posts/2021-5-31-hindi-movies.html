@@ -3,91 +3,35 @@ layout: movies
 title: Hindi Movies
 page: movie 
 categories: movies
+permalink: /movies/bollywood/
 ---
 
 <div class="movie_wrapper">
     <header>
+
+        {% include movie-nav.html %}
+
         <h3>
             Hindi Movies
         </h3>
     </header>
 
     <main>
+
+        {% for movie in site.data.movies %}
+
+        {% if movie.category == "bollywood" %}
+
         <div class="thumb__wrapper">
-            <img src="/assets/images/movies/hichki.jpg" title="Hichki">
+            <img src="/assets/images/movies/{{ movie.image }}" title="{{ movie.title }}">
             <div class="img-text">
-                <a href="https://www.rottentomatoes.com/m/hichki" target="_blank">Hichki‬</a>
+                <a href="{{ movie.link }}" target="_blank">{{ movie.title }}‬</a>
             </div>
         </div>
 
-        <div class="thumb__wrapper">
-            <img src="/assets/images/movies/golmaal.jpg" title="Golmaal-Again">
-            <div class="img-text">
-                <a href="https://www.rottentomatoes.com/m/golmaal_again" target="_blank">Golmaal Again</a> 
-            </div>
-        </div>
+        {% endif %}
 
-        <div class="thumb__wrapper">
-            <img src="/assets/images/movies/sultan.jpg" title="Sultan">
-            <div class="img-text">
-                <a href="https://www.rottentomatoes.com/m/sultan_2016" target="_blank">Sultan‬</a> 
-            </div>
-        </div>
+        {% endfor %}
 
-        <div class="thumb__wrapper">
-            <img src="/assets/images/movies/piku.jpg" title="Piku">
-            <div class="img-text">
-                <a href="https://www.rottentomatoes.com/m/piku" target="_blank">Piku‬</a> 
-            </div>
-        </div>
-        
-        <div class="thumb__wrapper">
-            <img src="/assets/images/movies/padmaavat.jpg" title="Padmaavat">
-            <div class="img-text">
-                <a href="https://www.rottentomatoes.com/m/padmaavat" target="_blank">Padmaavat‬</a> 
-            </div>
-        </div>
-
-        <div class="thumb__wrapper">
-            <img src="/assets/images/movies/chhichhore.jpg" title="Chhichhore">
-            <div class="img-text">
-                <a href="https://www.rottentomatoes.com/m/chhichhore" target="_blank">Chhichhore‬</a> 
-            </div>
-        </div>
-
-        <div class="thumb__wrapper">
-            <img src="/assets/images/movies/dangal.jpg" title="Dangal">
-            <div class="img-text">
-                <a href="https://www.rottentomatoes.com/m/dangal" target="_blank">Dangal‬</a> 
-            </div>
-        </div>
-
-        <div class="thumb__wrapper">
-            <img src="/assets/images/movies/mardani.jpg" title="Mardaani">
-            <div class="img-text">
-                <a href="https://www.rottentomatoes.com/m/mardaani" target="_blank">Mardaani‬</a> 
-            </div>
-        </div>
-
-        <div class="thumb__wrapper">
-            <img src="/assets/images/movies/wazir.jpg" title="Wazir">
-            <div class="img-text">
-                <a href="https://www.rottentomatoes.com/m/wazir" target="_blank">Wazir</a> 
-            </div>
-        </div>
-
-        <div class="thumb__wrapper">
-            <img src="/assets/images/movies/badla.jpg" title="Badla">
-            <div class="img-text">
-                <a href="https://www.rottentomatoes.com/m/badla" target="_blank">Badla‬</a> 
-            </div>
-        </div>
-
-        <div class="thumb__wrapper">
-            <img src="/assets/images/movies/kkkg.jpg" title="Kabhi Khushi Kabhie Gham">
-            <div class="img-text">
-                <a href="https://www.rottentomatoes.com/m/kabhi_khushi_kabhie_gham" target="_blank">Kabhi Khushi Kabhie Gham</a>
-            </div>
-        </div>
     </main>
 </div>
