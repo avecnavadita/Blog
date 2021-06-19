@@ -4,16 +4,21 @@ title: Blog
 ---
 
 <div class="content_wrapper">
-  <ul class="blog-ul">
-    {% for post in site.posts %}
-      {% if post.tags[0] != "movie" %}
-        <li>
-          <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-          <!-- <div class="post_excerpt">
-            {{ post.excerpt }}
-          </div> -->
-        </li>
-      {% endif %}
-    {% endfor %}
-  </ul>
+  <div class="blog-list-wrapper">
+    <ul class="blog-ul">
+      {% for post in site.posts %}
+        {% if post.page != "movie" %}
+          <li>
+            <h2>
+              <span class="material-icons-outlined">edit</span>
+              <a href="{{ post.url }}">{{ post.title }}</a>
+            </h2>
+            <div class="post_excerpt">
+              {{ post.excerpt }}
+            </div>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
 </div>
