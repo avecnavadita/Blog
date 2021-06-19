@@ -6,6 +6,8 @@ tags: Buddha
 categories: buddha 
 ---
 
+A portmanteau is the fusion of two words coming together to create a new word.
+
 ## Who
 
 ## What

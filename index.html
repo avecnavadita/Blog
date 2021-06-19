@@ -3,19 +3,22 @@ layout: post
 ---
 
 <div class="content_wrapper home_wrapper">
-  <div class="main_wrapper">
-  <h2>{{ "Hello World!" | downcase }}</h2>
-  <br><br><br><br><br>
-  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto optio quam cupiditate praesentium ea rem, dignissimos nulla nesciunt placeat ut deleniti vel repellendus aut doloribus fugiat ipsa beatae veritatis ad?</p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quae tempore in tempora doloremque vero illo a asperiores veritatis quibusdam dignissimos laboriosam optio iure corporis, ratione deserunt hic debitis. Earum.</p>
-  </div>
+  <!-- <div class="main_wrapper">
+    {% for post in site.posts %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      <p>{{post.excerpt}}</p>
+    {% endfor %}
+  </div> -->
 
   <div class="main_aside">
       <h2>Latest Posts</h2>
       <ul role="list" class="latest-post">
           {% for post in site.posts %}
             {% if post.page != "movie" %}
-              <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+              <li>
+                <span class="material-icons-outlined">edit</span>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+              </li>
             {% endif %}
           {% endfor %}
       </ul>
