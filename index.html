@@ -2,14 +2,18 @@
 layout: post
 ---
 
+<!-- showcase latest blog  -->
 <div class="content_wrapper home_wrapper">
-  <!-- <div class="main_wrapper">
+  <div class="main_wrapper">
     {% for post in site.posts %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-      <p>{{post.excerpt}}</p>
+    {% if forloop.index == 1 %}
+      <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+      <p>{{ post.excerpt }}</p>
+    {% endif %}
     {% endfor %}
-  </div> -->
+  </div>
 
+<!-- displays latest five blog titles  -->
   <div class="main_aside">
       <h2>Latest Posts</h2>
       <ul role="list" class="latest-post">
@@ -24,6 +28,7 @@ layout: post
       </ul>
   </div>
 
+  <!-- displays tag titles  -->
   <div class="tags">
       <h2>Tags</h2>
       <div class="tag-child">

@@ -454,3 +454,11 @@ p#permalink::before, p#permalink::after {
 span.f-example {
     color: var(--header-color);
 }
+
+//main page
+.main_wrapper h1 {
+    line-height: 0;
+    padding-bottom: 15px;
+    font-size: 32px;
+    letter-spacing: 2px;
+}
