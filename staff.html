@@ -2,16 +2,29 @@
 layout: default
 title: Authors
 ---
-<div class="content_wrapper">
+<div class="author_wrapper">
 <h1>{{page.title}}</h1>
 
 <div class="author">
   {% for author in site.authors %}
-    <div class="bio">
-      <img src="assets/images/authors/{{ author.dp }}" alt="{{ author.name }}">
-      <h2><a href="{{ author.url }}">{{ author.name }}</a></h2>
-      <h3>{{ author.position }}</h3>
+
+    <div class="author_box">
+
+      <div class="intro">
+
+          <div class="dp">
+            <img src="assets/images/authors/{{ author.dp }}" alt="{{ author.name }}">
+          </div>
+
+          <div class="info">
+            <h2><a href="{{ author.url }}">{{ author.name }}</a></h2>
+            <h3>{{ author.position }}</h3>
+          </div>
+
+      </div>
+
       <p>{{ author.excerpt | markdownify }}</p>
+
     </div>
   {% endfor %}
 </div>
