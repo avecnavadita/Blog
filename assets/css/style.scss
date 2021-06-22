@@ -20,7 +20,7 @@ body{
     margin: 0;
     font-size: var(--font-size);
 }
-
+img {width:100%;}
 a {
     text-decoration: none;
 }
@@ -34,10 +34,7 @@ p {
 ul {
     list-style: none;
     padding: 0;
-}
-
-.blog-wrapper h1{
-    padding: 90px 0;
+    margin:0;
 }
 
 h2, h3, h4, h5, h6 {
@@ -67,21 +64,55 @@ li h2 {
     font-size: 20px;
     margin: 0 auto;
     display: grid;
-    grid-template-rows: 230px minmax(500px,auto) 50px;
+    grid-template-rows: 230px minmax(600px,auto) auto;
     max-width: 1200px;
     box-shadow: 0 0px 16px 0px #dcd3f6;
-}
-.content_wrapper {
-    padding: 0 10px;
-}
-// header 
-header.top-header {
-    display: grid;
-    grid-template-columns: 200px 1fr;
-    place-items: self-end;
-    // background: var(--gray-light);
+    grid-row-gap: 20px;
 }
 
+//left and right padding of the main container
+.main_wrapper {
+    padding: 0 15px;
+}
+
+//main page
+.main_wrapper h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    margin-top: 0;
+}
+
+//decorate excerpts
+// .excerpt-text ::before, .excerpt-text ::after {
+//     content: '"';
+//     font-size: 30px;
+//     color: red;
+// }
+
+// hide excerpt from posts
+.post_wrapper .excerpt-text {
+    display: none;
+}
+//direct child
+.post_wrapper p:nth-child(2) {
+    display: none;
+}
+
+// header 
+header.main_header {
+    display: grid;
+    grid-template-columns: 200px auto;
+}
+.main_nav{
+    grid-column: 1/3;
+}
+.topic-wrapper {
+    place-self: end;
+}
+footer.main_footer{
+    background: var(--gray-light);
+    padding: 20px 0;
+}
 .site-title {
     margin: 0;
     padding: 10px 20px;
@@ -100,40 +131,33 @@ header.top-header {
     height: 300px;
 }
 
-img {
-    width: 40%;
-}
-
 .child-meanings {
     color: #673ab7;
 }
-
-// .content_wrapper {
-//     display: grid;
-//     grid-template-columns: 700px 1fr;
-//     grid-template-rows: auto;
-//     grid-gap: 40px;
-//     padding: 20px;
-// }
 
 .main_aside li {
     margin-top: 15px;
 }
 
 // navigation 
-nav {
-    background: #9479e354;
-    padding: 1px;
+nav.main_nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    max-height: 20px;
+}
+nav.main_nav {
+    background: var(--gray-light);
 }
 
-nav ul {
-    display: flex;
-    justify-content: flex-end;
-    list-style: none;
-}
+// nav ul {
+//     display: flex;
+//     justify-content: flex-end;
+//     list-style: none;
+// }
 
 nav li {
-    padding: 0 15px;
+    padding: 10px 20px;
 }
 
 nav a {
@@ -167,6 +191,9 @@ footer {
 // blog
 .blog-wrapper {
     width: 1024px;
+}
+.blog-wrapper h1{
+    padding: 90px 0;
 }
 
 // images
@@ -230,11 +257,9 @@ span {
     grid-template-rows: auto auto;
     margin: 40px 0;
 }
-
-.home_wrapper .main_wrapper {
+.post_showcase {
     grid-row: 1/3;
 }
-
 // blog
 .blog-ul-wrapper li {
     margin-bottom: 40px;
@@ -246,8 +271,9 @@ span {
 }
 .movie_wrapper main{
     display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-gap:20px;
+    grid-template-columns: repeat(4, auto);
+    grid-gap:30px;
+    align-items: center;
 }
 .category > h2 {
     margin: 10px;
@@ -260,108 +286,88 @@ span {
     text-shadow: 2px 2px 2px #6633993d;
 }
 .movie_list__wrapper nav {
-    background: rebeccapurple;
-    color: #fff;
+    // background: var(--header-color);
+    background: #fff;
+    // color: #fff;
+    margin-top: 50px;
+}
+.movie_list__wrapper nav a {
+    color: #3d05a1 !important;
+}
+//movies list by category
+.movie_list__wrapper .cat_thumb__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    place-items: center;
 }
 .movie_list__wrapper nav a {
     color: #fff;
 }
 .thumb__wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid #83cae85c;
-    margin: 10px;
+    border: 1px solid #c5b5f0;
     padding: 10px;
-    justify-content: center;
-    height: 400px;
+    box-shadow: 0 0 9px -5px;
+    text-align: center;
+    height: 423px;
 }
-
 .thumb__wrapper img {
     margin: 20px 0;
+    max-width: 220px;
 }
 
 .img-text {
     text-align: center;
 }
 
-//movies list by category
-.movie_list__wrapper .cat_thumb__wrapper {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-}
-.movie_list__wrapper nav {
-    background: rebeccapurple;
-    color: #fff;
-    margin-top: 10px;
-}
-.movie_list__wrapper nav a {
-    color: #fff;
-}
+
 
 // author
-.author_wrapper {
-    width: 80%;
-}
-
-.author_wrapper ul {
-    list-style-type: revert;
-    padding: revert;
-}
-
-.author_wrapper li {
-    line-height: 40px;
-}
 
 .author img {
-    width: 220px;
-    // box-shadow: inset 0px 0px 20px 0px #ffffff6e;
-    height: 220px;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
 }
-
-.content_wrapper h1 {
-    grid-column: 1/3;
-    line-height: 140px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 2.7rem;
-    letter-spacing: 5px;
+.author .dp {
+    padding-right: 20px;
+    min-width: 200px;
 }
-
 .author {
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-gap: 50px;
-    place-items: center;
+    // place-items: center;
+}
+.author .intro {
+    display: flex;
+}
+.author .info {
+    align-self: center;
+    text-align: center;
 }
 
-.bio img {
-    margin: 30px 0;
-}
-
-.bio {
+.author_box {
     border: 2px dashed #3f51b530;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin: 50px 0;
-    width: 420px;
 }
 
 //blog
+.blog-list-wrapper .excerpt {
+    display: revert;
+    margin-left: 30px;
+    padding: 10px 0;
+}
 .blog-list-wrapper ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 60px;
 }
 
-// portmanteau
-.definition p {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-}
 
+// portmanteau
 .example {
     font-family: 'Lexend', sans-serif;
     font-size: 25px;
@@ -369,56 +375,21 @@ span {
     box-shadow: 0px 0px 1px 2px #66339912;
     margin-bottom: 20px;
 }
-
-p#permalink::before, p#permalink::after {
-    content: '"';
-    font-size: 30px;
-    color: red;
-}
-
 .portmanteau {
     line-height: 40px;
     padding: 0 20px;
     font-size: 1.3rem;
     font-family: monospace;
 }
-
 .example-wrapper div:nth-child(even) {
     background: #f5f2f9;
 }
-
-// .portmanteau {
-//     line-height: 52px;
-//     padding: 0 20px;
-//     font-size: 1.3rem;
-// }
 
 .portmanteau-container {
     display: grid;
     grid-template-columns: auto 400px;
     grid-column-gap: 50px;
 }
-
-// .example {
-//     font-family: 'Lexend', sans-serif;
-//     font-size: 25px;
-//     letter-spacing: 1px;
-// }
-
-// .example-child {
-//     display: grid;
-//     grid-template-rows: 1fr 1fr 1fr;
-//     grid-template-columns: 1fr 1fr;
-// }
-
-// .childs {
-//     line-height: 50px;
-//     background: #d7cae5ba;
-//     margin: 20px;
-//     padding: 20px;
-//     text-align: center;
-//     box-shadow: inset 1px 1px 12px #673ab7a1;
-// }
 
 .example-header {
     font-size: 30px;
@@ -431,17 +402,13 @@ p#permalink::before, p#permalink::after {
 .compound-portmanteau {
     margin-top: 40px;
 }
-
+.compound li {
+    line-height: 30px;
+}
 .compound span {
     font-size: 20px;
     color: black;
     display: block;
-}
-
-.compound {
-    background: #e2d8ec54;
-    margin: 20px 0;
-    padding: 20px;
 }
 
 .note {
@@ -455,10 +422,3 @@ span.f-example {
     color: var(--header-color);
 }
 
-//main page
-.main_wrapper h1 {
-    line-height: 0;
-    padding-bottom: 15px;
-    font-size: 32px;
-    letter-spacing: 2px;
-}

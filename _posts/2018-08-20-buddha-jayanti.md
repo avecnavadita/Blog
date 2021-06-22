@@ -6,6 +6,8 @@ tags: Buddha
 categories: buddha 
 ---
 
+Buddha was born in Nepal and also called the light of Asia.
+
 ## Introduction
 
 Buddha is regarded as the founder of the world religion of Buddhism. Buddha Jayanti is a special day for both Hindus and Buddhists in Nepal. On this day people celebrate the life of Lord Buddha's Enlightenment and Mahaparinirvana (Death). 

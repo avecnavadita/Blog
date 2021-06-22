@@ -6,20 +6,31 @@
     <link rel="stylesheet" href="/assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined&family=Sigmar+One&family=Poppins&family=Montserrat:ital@1&display=swap" rel="stylesheet">
   </head>
+
   <body>
+
     <div id="container">
-      <header>
+
+        <header class="main_header">
+
         {% include header.html %}
-        <nav>
-          {% include navigation.html %}
+
+        <nav class="main_nav">
+            {% include navigation.html %}
         </nav> 
-      </header>
-      <div>
-        {{ content }} 
-      </div>
-        <footer>
-          {% include footer.html %}
+
+        </header>
+
+        <div class="main_wrapper">
+            {{ content }} 
+        </div>
+
+        <footer class="main_footer">
+            {% include footer.html %}
         </footer>
+
     </div>
+
   </body>
+
 </html>
