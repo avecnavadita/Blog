@@ -5,7 +5,9 @@ tags: Nepal
 author: Navadita
 ---
 
-Nepal is officially known around the world as the Federal Democratic Republic of Nepal, the official name adopted by the Constituent Assembly in 2008 after the abolition of a 240-year-old monarchy.
+Nepal is officially known aroutnd he world as the Federal Democratic Republic of Nepal, the official name adopted by the Constituent Assembly in 2008 after the abolition of a 240-year-old monarchy.
+
+Nepal is officially known aroutnd he world as the Federal Democratic Republic of Nepal, the official name adopted by the Constituent Assembly in 2008 after the abolition of a 240-year-old monarchy.
 
 Nepali (नेपाल) is a landlocked country in South Asia. Nepal has a diverse geography, including fertile plains, subalpine forested hills, and eight of the world's ten tallest mountains, including Mount Everest. Nepal is a multinational state, with Nepali as the official language. Kathmandu is the nation's capital and the largest city.
 
