@@ -3,10 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined&family=Sigmar+One&family=Poppins&family=Montserrat:ital@1&display=swap" rel="stylesheet">
   </head>
   <body>
-    {% include navigation.html %}
-    {{ content }}
+    <div id="container">
+      <header>
+        {% include header.html %}
+        <nav>
+          {% include navigation.html %}
+        </nav> 
+      </header>
+      <div>
+        {{ content }} 
+      </div>
+        <footer>
+          {% include footer.html %}
+        </footer>
+    </div>
   </body>
 </html>

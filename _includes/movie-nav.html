@@ -1,0 +1,9 @@
+<nav role="navigation">
+    <ul>
+        {% for category in site.data.movie-nav %}
+            <li>
+                <a href="{{ category.url }}">{{ category.name | upcase }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</nav>

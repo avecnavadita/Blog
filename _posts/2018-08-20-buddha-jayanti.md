@@ -23,5 +23,3 @@ Buddha Jayanti is celebrated every year on May 26 to mark his birthday and to re
 Lumbini - the birthplace, Tilaurakot or Kapilvastu - where Buddha spent his first 29 years, Devdaha - his maternal home, and other sacred places and monasteries all over Kathmandu and Nepal, are crowded with devotees on the day of Buddha Jayanti.
 
 In Kathmandu valley, Buddhists of all persuasions as well as pilgrims from abroad, honor the Buddha at the two great stupas Swyambhunath, Boudhanath and the largely Buddhist city of Patan. Activities at the main Buddhist stupas and shrines begin at dawn and continue till late in the evening.
-
-

@@ -1,0 +1,37 @@
+---
+layout: movies
+title: Hindi Movies
+page: movie 
+categories: movies
+permalink: /movies/bollywood/
+---
+
+<div class="movie_wrapper">
+    <header>
+
+        {% include movie-nav.html %}
+
+        <h3>
+            Hindi Movies
+        </h3>
+    </header>
+
+    <main>
+
+        {% for movie in site.data.movies %}
+
+        {% if movie.category == "bollywood" %}
+
+        <div class="thumb__wrapper">
+            <img src="/assets/images/movies/{{ movie.image }}" title="{{ movie.title }}">
+            <div class="img-text">
+                <a href="{{ movie.link }}" target="_blank">{{ movie.title }}‬</a>
+            </div>
+        </div>
+
+        {% endif %}
+
+        {% endfor %}
+
+    </main>
+</div>

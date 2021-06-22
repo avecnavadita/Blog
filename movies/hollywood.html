@@ -1,0 +1,35 @@
+---
+layout: movies
+page: movie 
+categories: movies
+permalink : /movies/hollywood
+---
+
+<div class="movie_wrapper">
+    <header>
+
+        {% include movie-nav.html %}
+
+        <h3>
+            English Movies
+        </h3>
+    </header>
+    <main>
+        
+        {% for obj in site.data.movies %}
+
+        {% if obj.category == "hollywood" %}
+
+        <div class="thumb__wrapper">
+            <img src="/assets/images/movies/{{ obj.image }}" title="{{ obj.title }}">
+            <div class="img-text">
+                <a href="{{ obj.link }}">{{ obj.title }}</a>
+            </div>
+        </div>
+
+        {% endif %}
+
+        {% endfor %}
+
+    </main>
+</div>

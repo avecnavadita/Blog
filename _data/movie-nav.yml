@@ -1,0 +1,6 @@
+- name: animation
+  url: /movies/animation
+- name: hollybood
+  url: /movies/hollywood
+- name: bollywood
+  url: /movies/bollywood

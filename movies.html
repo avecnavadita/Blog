@@ -2,13 +2,103 @@
 layout: default
 ---
 
-<ul class="movie">
-  {% for x in site.posts %}
-    {% if x.page == "movie" %}
-    <li>
-      <a href="{{ x.url }}">{{ x.title }}</a>
-    </li>
-    {% endif %}
-  {% endfor %}
-</ul>
+<div class="movie_list__wrapper">
+    <header>
+        <!-- {% capture categories %}
+            {% for movie in site.data.movies  %}
+                {{movie.category}}
+            {% endfor %}
+        {% endcapture %}
+        {% assign uniq_categories = categories | split: ' ' | uniq %}
+        <nav class="movie-nav" role="navigation">
+            <ul>
+                {% for category in uniq_categories  %}
+                    <li>
+                        <a href="{{ p }}">{{ category | upcase }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </nav> -->
 
+        <!-- get the navigation data from data/movies-nav -->
+        
+        {% include movie-nav.html %}
+
+    </header>
+    
+    <main>
+        
+        <!-- display 4 movies for each categories -->
+
+        <div class="category">
+            <h2>Animation</h2>
+            <div class="cat_thumb__wrapper">
+                {% assign i = 0 %}
+                {% for movie in site.data.movies %}
+                {% if movie.category == 'animation' %}
+
+                    {% assign i =  i | plus : 1 %}
+                    {% if i <= 4 %}
+                    <div class="thumb__wrapper" title="{{ movie.title }}">
+                        <img src="/assets/images/movies/{{ movie.image }}" title="{{ movie.title }}">
+                        <div class="movie_data">
+                            <div class="mv_title"><a href="{{ movie.link }}" target="_blank">{{ movie.title }}</a></div>
+                            <div class="mv_year">{{ movie.year }}</div>
+                        </div>
+                    </div>
+                    {% endif %}
+
+                {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="category">
+            <h2>Hollywood</h2>
+            <div class="cat_thumb__wrapper">
+                {% assign i = 0 %}
+                {% for movie in site.data.movies %}
+                {% if movie.category == 'hollywood' %}
+
+                    {% assign i =  i | plus : 1 %}
+                    {% if i <= 4 %}
+                    <div class="thumb__wrapper" title="{{ movie.title }}">
+                        <img src="/assets/images/movies/{{ movie.image }}" title="{{ movie.title }}">
+                        <div class="movie_data">
+                            <div class="mv_title"><a href="{{ movie.link }}" target="_blank">{{ movie.title }}</a></div>
+                            <div class="year_label" class="mv_year">{{ movie.year }}</div>
+                        </div>
+                    </div>
+                    {% endif %}
+
+                {% endif %}
+                {% endfor %}
+        </div>
+        </div>
+
+        <div class="category">
+            <h2>Bollywood</h2>
+            <div class="cat_thumb__wrapper">
+                {% assign i = 0 %}
+                {% for movie in site.data.movies %}
+                {% if movie.category == 'bollywood' %}
+
+                    {% assign i =  i | plus : 1 %}
+                    {% if i <= 4 %}
+                    <div class="thumb__wrapper" title="{{ movie.title }}">
+                        <img src="/assets/images/movies/{{ movie.image }}" title="{{ movie.title }}">
+                        <div class="movie_data">
+                            <div class="mv_title"><a href="{{ movie.link }}" target="_blank">{{ movie.title }}</a></div>
+                            <div class="year_label" class="mv_year">{{ movie.year }}</div>
+                        </div>
+                    </div>
+                    {% endif %}
+
+                {% endif %}
+                {% endfor %}
+        </div>
+        </div>
+
+    </main>
+
+</div>

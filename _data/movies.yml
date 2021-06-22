@@ -1,66 +1,186 @@
-- category: animation
+- category:  animation
   title: Moana
   image: moana.jpg
   year: 2021
   link: 'https://www.rottentomatoes.com/m/moana_2016'
 
-- category: animation
+- category:  animation
   title: Brave
   image: brave.jpg
   year: 2021
   link: 'https://www.rottentomatoes.com/m/brave_2012'
 
-- category: animation
+- category:  animation
   title: Spider-Man
   image: spiderman-homecoming.jpg
   year: 2021
   link: 'https://www.rottentomatoes.com/m/spider_man_far_from_home'
 
-- category: animation
+- category:  animation
   title: Monsters University
   image: monsters3.jpg
   year: 2021
   link: 'https://www.rottentomatoes.com/m/monsters_university'
 
-- category: animation
+- category:  animation
   title: Raya-and-theLast-Dragon
   image: raya.jpg  
   year: 2021
   link: 'https:/www.rottentomatoes.com/m/raya_and_the_last_dragon'
 
-- category: animation
+- category:  animation
   title: Cars
   image: cars.jpg
   year: 2021
   link: 'https://www.rottentomatoes.com/m/cars'
 
-- category: animation
+- category:  animation
   title: TheGood-Dinosaur
   image: dinosaur.jpg
   year: 2020
   link: 'htps://www.rottentomatoes.com/m/the_good_dinosaur'
 
-- category: animation
+- category:  animation
   title: Tangled
   image: tangled.jpg
   year: 2021
   link: 'https://www.rottentomatoes.com/m/tangled'
 
-- category: animation
+- category:  animation
   title: Frozen
   image: frozen.jpg
   year: 2021
   link: 'https://www.rottentomatoes.com/m/frozen_2013'
 
-- category: animation
+- category:  animation
   title: Zootopia
   image: zootopia.jpg
   year: 2021
   link: 'https://www.rottentomatoes.com/m/zootopia'
 
-- category: animation
+- category:  animation
   title: Hotel-Transylvania
   image: hotel-transylvania3.jpg
   year: 2021
   link: 'https://www.rottentomatoes.com/m/hotel_transylvania_3_summer_vacation'
+
+- category: hollywood
+  image: blue-miracle.jpg        
+  title: Blue Miracle           
+  year: 2021
+  link: 'https://www.rottentomatoes.com/m/blue_miracle' 
+
+- category: hollywood
+  image: feel-the-beat.jpg 
+  title: Feel the Beat‬           
+  year: 2021
+  link: 'https://www.rottentomatoes.com/m/feel_the_beat' 
+
+- category: hollywood
+  image: a-quiet-place.jpg 
+  title: A Quiet Place‬           
+  year: 2021
+  link: 'https://www.rottentomatoes.com/m/a_quiet_place_2018' 
+
+- category: hollywood
+  image: five-feet-apart.png 
+  title: Five Feet Apart‬           
+  year: 2021
+  link: 'https://www.rottentomatoes.com/m/five_feet_apart' 
+      
+- category: hollywood
+  image: mib.jpg 
+  title: Men in Black - International‬           
+  year: 2021
+  link: 'https://www.rottentomatoes.com/m/men_in_black_international' 
+      
+- category: hollywood
+  image: t-p-f-h.png 
+  title: The Pursuit of Happyness‬           
+  year: 2021
+  link: 'https://www.rottentomatoes.com/m/pursuit_of_happyness' 
+      
+- category: hollywood
+  image: t-p-s.png 
+  title: The Princess Switch‬           
+  year: 2021
+  link: 'https://www.rottentomatoes.com/m/the_princess_switch' 
+
+- category: hollywood
+  image: san-andreas.jpg 
+  title: San Andreas‬
+  year: 2021           
+  link: 'https://www.rottentomatoes.com/m/san_andreas' 
+      
+- category: hollywood
+  image: bb-f-l.jpg 
+  title: Bad Boys for Life‬           
+  year: 2021
+  link: 'https://www.rottentomatoes.com/m/bad_boys_for_life' 
+
+- category:  hollywood               
+  image: jumanji-next-level.jpg 
+  title: Jumanji - The Next Level‬      
+  year: 2021     
+  link: 'https://www.rottentomatoes.com/m/jumanji_the_next_level' 
+  
+- category: bollywood
+  image: hichki.jpg
+  title: Hichki‬
+  year: 2020
+  link: 'https://www.rottentomatoes.com/m/hichki'
+
+- category: bollywood
+  image: sultan.jpg
+  title: Sultan‬
+  year: 2020
+  link: 'https://www.rottentomatoes.com/m/sultan_2016'
+  
+- category: bollywood
+  image: piku.jpg 
+  title: Piku
+  link: 'https://www.rottentomatoes.com/m/piku'
+  year: 2021
+
+- category: bollywood
+  image: padmaavat.jpg 
+  title: Padmaavat
+  link: 'https://www.rottentomatoes.com/m/padmaavat'
+  year: 2021
+
+- category: bollywood
+  image: chhichhore.jpg 
+  title: Chhichhore
+  link: 'https://www.rottentomatoes.com/m/chhichhore'
+  year: 2021
+
+- category: bollywood
+  image: dangal.jpg 
+  title: Dangal
+  link: 'https://www.rottentomatoes.com/m/dangal'
+  year: 2021
+
+- category: bollywood
+  image: mardani.jpg 
+  title: Mardaani
+  link: 'https://www.rottentomatoes.com/m/mardaani'
+  year: 2021
+
+- category: bollywood
+  image: wazir.jpg 
+  title: Wazir
+  link: 'https://www.rottentomatoes.com/m/wazir'
+  year: 2021
+
+- category: bollywood
+  image: badla.jpg 
+  title: Badla
+  link: 'https://www.rottentomatoes.com/m/badla'
+  year: 2021
+
+- category: bollywood
+  image: kkkg.jpg 
+  title: Kabhi Khushi Kabhie Gham
+  link: 'https://www.rottentomatoes.com/m/kabhi_khushi_kabhie_gham'
+  year: 2021
 
