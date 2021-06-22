@@ -4,21 +4,20 @@ title: Blog
 ---
 
 <div class="content_wrapper">
-  <div class="blog-list-wrapper">
-    <ul class="blog-ul">
+  <div class="blog-list-wrapper"> 
       {% for post in site.posts %}
         {% if post.page != "movie" %}
-          <li>
+          <div>
             <h2>
-              <span class="material-icons-outlined">edit</span>
+              <!-- <span class="material-icons-outlined">edit</span> -->
               <a href="{{ post.url }}">{{ post.title }}</a>
             </h2>
             <div class="excerpt">
               {{ post.excerpt }}
             </div>
-          </li>
+            <!-- <hr> -->
+          </div>
         {% endif %}
       {% endfor %}
-    </ul>
   </div>
 </div>

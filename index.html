@@ -15,14 +15,16 @@ layout: post
 
 <!-- displays latest five blog titles  -->
   <div class="main_aside">
-      <h2>Latest Posts</h2>
+      <h2>Latest 5 posts</h2>
       <ul role="list" class="latest-post">
           {% for post in site.posts %}
             {% if post.page != "movie" %}
+            {% if forloop.index <= 5 %}
               <li>
                 <span class="material-icons-outlined">edit</span>
                 <a href="{{ post.url }}">{{ post.title }}</a>
               </li>
+              {% endif %}
             {% endif %}
           {% endfor %}
       </ul>
