@@ -5,6 +5,8 @@ author: Navadita
 
 Juneteenth is a holiday showing respect to the end of slavery in the United States. Juneteenth is celebrated on June 19. The name “Juneteenth” references the date of the holiday, combining the words “June” and “nineteenth.”
 
+![](/assets/images/blog/juneteenth-removebg.png)
+
 Juneteenth is a holiday showing respect to the end of slavery in the United States. Juneteenth is celebrated on June 19. The name “Juneteenth” references the date of the holiday, combining the words “June” and “nineteenth.”
 
 In 1862, *President Abraham Lincoln* issued the emancipation proclamation  declaring **“all persons held as slaves shall be then, thenceforward and forever free”**. It was effective from January 1, 1863. It was not until the ratification of the 13th Amendment to the Constitution, in 1865, that slavery was formally abolished.
