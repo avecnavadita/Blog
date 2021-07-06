@@ -1,19 +1,12 @@
 ---
 layout: post
 ---
-
 <!-- showcase latest blog  -->
 <div class="home_wrapper">
 
-  <div class="quotes">
-    {% assign r = rand(0..4) %}
-    {% assign total_quotes = site.data.quotes.size %}
-    <h2> hi {{ r }} </h2>
-    {% for quote in site.data.quotes %}
-    {% if forloop.index == 1 %}
-      <p>{{ quote.quote }}</p>
-    {% endif %}
-    {% endfor %}
+  <div id="q_wrapper">    
+    <blockquote><div class="quote"></div></blockquote>
+    <div class="author"></div>
   </div>
 
   <div class="post_showcase">
@@ -23,10 +16,9 @@ layout: post
       <p>{{ post.excerpt }}</p>
     {% endif %}
     {% endfor %}
-  </div>
 
 <!-- displays latest five blog titles  -->
-  <div class="main_aside">
+  <div class="main_aside top_post">
       <h2>Latest 5 posts</h2>
       <ul role="list" class="latest-post">
           {% for post in site.posts %}
@@ -57,3 +49,24 @@ layout: post
       </div>
   </div>
 </div>
+
+<script>
+function get_quote_of_the_day() 
+{
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        const response = JSON.parse(this.responseText);
+        const quote = response.contents.quotes[0];
+        document.querySelector('#q_wrapper .quote').innerText = quote.quote;
+        document.querySelector('#q_wrapper .author').innerText = quote.author;
+        // console.log(quote);
+    }
+  }
+  xhttp.open("GET", "http://quotes.rest/qod.json?category=inspire", true);
+  // xhttp.setRequestHeader("Content-type", "application/json");
+  // xhttp.setRequestHeader("X-Theysaidso-Api-Secret", "YOUR API HERE");
+  xhttp.send();
+}
+get_quote_of_the_day()
+</script>
