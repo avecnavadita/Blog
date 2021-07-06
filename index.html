@@ -4,6 +4,18 @@ layout: post
 
 <!-- showcase latest blog  -->
 <div class="home_wrapper">
+
+  <div class="quotes">
+    {% assign r = rand(0..4) %}
+    {% assign total_quotes = site.data.quotes.size %}
+    <h2> hi {{ r }} </h2>
+    {% for quote in site.data.quotes %}
+    {% if forloop.index == 1 %}
+      <p>{{ quote.quote }}</p>
+    {% endif %}
+    {% endfor %}
+  </div>
+
   <div class="post_showcase">
     {% for post in site.posts %}
     {% if forloop.index == 1 %}
@@ -44,5 +56,4 @@ layout: post
             </ul>
       </div>
   </div>
-
 </div>
