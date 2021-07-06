@@ -13,3 +13,5 @@ gem "kramdown-parser-gfm", "~> 1.1"
 gem "jekyll"
 
 gem "jekyll-watch", "~> 2.2"
+
+gem "jekyll-paginate"
