@@ -4,7 +4,7 @@ author: Nava
 title: Nepal starts operating its largest hydropower station
 ---
 
-The Upper Tamakoshi Hydropower Project (UPPER) started its operation since July 06 2021. It can produce a total of 456MW electricity with 6 turbines at the capacity of 76MW each.  It is once of a national pride project, the largest project ever carried out within Nepal, without any international financial assistance.
+The Upper Tamakoshi Hydropower Project (UPPER) started its operation since July 06 2021. It can produce a total of 456MW electricity with 6 turbines at the capacity of 76MW each.  It is one of a national pride project, the largest project ever carried out within Nepal, without any international financial assistance.
 
 ![Upper Tamakoshi](/assets/images/blog/upper-tamakoshi.jpg)
 Upper Tamakoshi Hydropower (Picture : Facebook)
