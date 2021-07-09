@@ -2,6 +2,7 @@
 layout: post
 author: Navadita
 title: Blackpink
+date: July 7, 2021
 ---
 
 Blackpink is a South Korean girl group formed by YG Entertainment, consisting of members Jisoo, Jennie, Rosé, and Lisa. The group debuted in August 2016 with their single album Square One, which featured "Whistle" and "Boombayah", their first number-one entries on South Korea's Gaon Digital Chart and the Billboard World Digital Song Sales chart, respectively.
